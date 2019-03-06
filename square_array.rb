@@ -1,10 +1,17 @@
+# def square_array(array)
+#     new_array = []
+#     array.each do |element|
+#         new_array << element ** 2
+#     end
+#     new_array
+# end
+
 def square_array(array)
     new_array = []
-    array.each do |element|
-        new_array << element ** 2
-    end
+    array.each { |e| new_array << e ** 2 }
     new_array
 end
+
 # Must create new array and shovel squared elements into new array or each will return the original array and elements
 
 # Second try - Fails on third condition
